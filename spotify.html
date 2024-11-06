@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotify.css">
+    <script src="spotify.js"></script>
+    <title>Playflix</title>
+</head>
+
+<body class="universal">
+    <img src="volume.svg" alt="">
+    <div class="container flex bg-black">
+        <div class="left radius">
+            <div class="close">
+                <img class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home bg-grey radius m-1 p-1">
+                <img width="30" src="logo.svg" class="invert" alt="">
+                <ul>
+                    <li><a href=""><img class="invert" src="home.svg" alt="">Home</a></li>
+                    <li><img class="invert" src="search.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey m-1 p-1">
+                <div class="heading">
+                    <img src="file.svg" class="invert file" alt="">
+                    <h2>Your library</h2>
+                    <img class="invert down" src="down.svg" alt="">
+                </div>
+                <div class="songsList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="https://www.spotify.com/au/legal/">Legal</a>
+                    <a href="https://www.spotify.com/au/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/au/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/au/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/au/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/au/accessibility/">Accessibility</a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey radius m-1 p-1">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer flex">
+                        <img class="invert hamburger" src="hamburger.svg" alt="">
+                        <img src="back.svg" class="invert" id="backButton" onclick="" alt="">
+                        <img src="forward.svg" class="invert" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signUpBtn">Sign Up</button>
+                    <button class="logInBtn">Log In</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1><a href="">Spotify Playlists</a></h1>
+                <div class="cardContainer">
+                    <div class="card cursor">
+                        <div class="play" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                                <path d="M9 7.5L16.5 12L9 16.5V7.5Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img id="playlistImage" src="playlistImg.jpeg" alt="">
+                        <h2>Happy Tears</h2>
+                        <p>Hits to melt your heart and fill your mood with happiness!</p>
+                    </div>
+                    <div class="card cursor">
+                        <div class="play" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                                <path d="M9 7.5L16.5 12L9 16.5V7.5Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img id="headphones" src="headphones.jpeg" alt="">
+                        <h2>Best Indies</h2>
+                        <p>Listen to the best and the best songs of all time from popular artists</p>
+                    </div>
+                    <div class="card cursor">
+                        <div class="play" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                                <path d="M9 7.5L16.5 12L9 16.5V7.5Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img id="playlistImage2" src="playlistsImg.jpeg" alt="">
+                        <h2>Great Mood</h2>
+                        <p>Hits to remove stress. Listen to the glorious songs and alter your mood!</p>
+                    </div>
+                    <div class="card cursor">
+                        <div class="play" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                                <path d="M9 7.5L16.5 12L9 16.5V7.5Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img id="playlistImage2" src="sajjan.jpeg" alt="">
+                        <h2>Watch Your Love</h2>
+                        <p>Listen to the best Nepali Songs of Sajjan Raj Vaidya. Make your stony heart cry!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekBar">
+                    <div class="circle"></div>
+                </div>
+                <div class="aboveBar">
+                    <div class="songInfo"></div>
+                    <div class="song-buttons"><img id="previous" src="previous.svg" class="play-icon" alt="Previous"
+                            onclick="">
+                        <img src="play.svg" class="play-icon" alt="Play/Pause" id="play" onclick="">
+                        <img id="next" src="next.svg" class="play-icon" alt="next" onclick="">
+                    </div>
+                    <div style="display: flex;">
+                        <div class="songTime"></div>
+                        <div class="volume flex">
+                            <img src="volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
